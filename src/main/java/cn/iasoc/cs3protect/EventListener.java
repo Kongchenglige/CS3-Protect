@@ -33,7 +33,7 @@ public class EventListener implements Listener {
             // Send a message to the player
             player.sendMessage("§c[FPCSP] 您距離過遠或未對準商店牌!");
             String pos = "[" + player.getLocation().getBlockX() + "," + player.getLocation().getBlockY() + "," + player.getLocation().getBlockZ() + "]";
-            this.plugin.getLogger().info("Player " + player.getName() + " tried to buy " + event.getSign().getLine(3) + " from a far distance or not targeting a sign at " + pos + " .");
+            this.plugin.getLogger().info("Player " + player.getName() + " tried to buy " + event.getSign().getLine(3) + " at  " + pos + " .");
             // Prevent spam clicking
             event.setCancelled(SPAM_CLICKING_PROTECTION);
         }
